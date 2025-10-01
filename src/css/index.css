@@ -1,0 +1,26 @@
+:root {
+  --bg-dark: hsl(131 100% 1%);
+  --bg: hsl(130 78% 3%);
+  --bg-light: hsl(132 47% 7%);
+  --text: hsl(129 100% 98%);
+  --sub-text: hsl(129, 5%, 45%);
+  --text-muted: hsl(129 20% 66%);
+  --highlight: hsl(131 23% 35%);
+  --border: hsl(132 32% 24%);
+  --border-muted: hsl(136 59% 14%);
+  --primary: hsl(130 35% 64%);
+  --secondary: hsl(304 41% 72%);
+  --danger: hsl(9 37% 65%);
+  --warning: hsl(52 26% 54%);
+  --success: hsl(147 24% 57%);
+  --info: hsl(217 40% 66%);
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}

@@ -1,0 +1,19 @@
+.list-item {
+  padding: 10px;
+  border: 3px solid var(--border);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.list-item.active {
+  background-color: var(--highlight);
+}
+
+.list-rank {
+  font-size: 1.5em;
+  margin-right: 15px;
+  margin-left: 10px;
+  color: var(--text);
+}

@@ -8,15 +8,15 @@ function AppLayout({ children }: { children: React.ReactNode }) {
     "Overview",
     "Top Tracks",
     "Top Artists",
-    "Top Genres",
     "Recently Played",
+    "Generate Playlist",
   ];
   const navLinks = [
     "/overview",
     "/top-tracks",
     "/top-artists",
-    "/top-genres",
     "/recently-played",
+    "/generate-playlist",
   ];
 
   return (

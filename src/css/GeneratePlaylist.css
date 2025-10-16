@@ -1,0 +1,73 @@
+/* Generate Playlist Page Styles */
+.page-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem;
+}
+
+/* Loading state */
+.generate-playlist-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: var(--text-muted);
+}
+
+.generate-playlist-spinner {
+  width: 30px;
+  height: 30px;
+  border: 3px solid var(--border);
+  border-top: 3px solid var(--spotify-green);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 1rem;
+}
+
+/* Empty state */
+.generate-playlist-empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.generate-playlist-empty-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.generate-playlist-empty-title {
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.generate-playlist-empty-description {
+  color: var(--text-muted);
+  font-size: 1rem;
+  max-width: 300px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Tracks list */
+.generate-playlist-tracks-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes spin {
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(360deg); 
+  }
+}

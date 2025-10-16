@@ -10,6 +10,9 @@ function TopTracks() {
       artists: ["Zedd"],
       coverUrl:
         "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228",
+      releaseDate: "2014-10-27",
+      genres: ["Dance", "Electronic"],
+      albumName: "Clarity",
     },
     {
       id: "2",
@@ -17,6 +20,9 @@ function TopTracks() {
       artists: ["Zedd"],
       coverUrl:
         "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228",
+      releaseDate: "2013-09-10",
+      genres: ["Dance", "Electronic"],
+      albumName: "Clarity",
     },
   ];
 

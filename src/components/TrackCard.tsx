@@ -11,7 +11,7 @@ interface Props {
 
 function TrackCard({ track, rank, selected, onToggle }: Props) {
   return (
-    <div className={"list-item" + (selected ? " active" : "")}>
+    <div className={`list-item ${selected ? "selected" : ""}`}>
       <div className="list-rank">
         <h1>{rank}.</h1>
       </div>
@@ -20,8 +20,23 @@ function TrackCard({ track, rank, selected, onToggle }: Props) {
           <img src={track.coverUrl} alt={`${track.name} cover`} />
         </div>
         <div className="track-card-info">
-          <h3 className="track-card-title">{track.name}</h3>
-          <p className="track-card-artist">{track.artists.join(", ")}</p>
+          <div className="track-top-row">
+            <span className="track-card-name">{track.name}</span>
+            <span className="track-card-top-separator">-</span>
+            <span className="track-card-artist">
+              {track.artists.join(", ")}
+            </span>
+          </div>
+          <div className="track-middle-row">
+            <span className="track-card-album">{track.albumName}</span>
+          </div>
+          <div className="track-bottom-row">
+            <span className="track-card-genre">{track.genres[0]}</span>
+            <span className="track-card-bottom-separator">|</span>
+            <span className="track-card-date">
+              Released {track.releaseDate}
+            </span>
+          </div>
         </div>
         <div className="track-card-button">
           <button

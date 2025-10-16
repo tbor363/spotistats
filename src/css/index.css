@@ -1,19 +1,61 @@
 :root {
-  --bg-dark: hsl(131 100% 1%);
-  --bg: hsl(130 78% 3%);
-  --bg-light: hsl(132 47% 7%);
-  --text: hsl(129 100% 98%);
-  --sub-text: hsl(129, 5%, 45%);
-  --text-muted: hsl(129 20% 66%);
-  --highlight: hsl(131 23% 35%);
-  --border: hsl(132 32% 24%);
-  --border-muted: hsl(136 59% 14%);
-  --primary: hsl(130 35% 64%);
-  --secondary: hsl(304 41% 72%);
-  --danger: hsl(9 37% 65%);
-  --warning: hsl(52 26% 54%);
-  --success: hsl(147 24% 57%);
-  --info: hsl(217 40% 66%);
+  /* Background colors - darker, more sophisticated */
+  --bg-dark: hsl(0 0% 6%);
+  --bg: hsl(0 0% 9%);
+  --bg-light: hsl(0 0% 12%);
+  --card-bg: hsl(0 0% 11%);
+  
+  /* Text colors - clean whites and grays */
+  --text: hsl(0 0% 98%);
+  --text-muted: hsl(0 0% 65%);
+  --sub-text: hsl(0 0% 45%);
+  
+  /* Spotify brand colors */
+  --primary: hsl(141 76% 40%);
+  --primary-hover: hsl(141 76% 48%);
+  --spotify-green: hsl(141 76% 40%);
+  --spotify-green-hover: hsl(141 76% 48%);
+  
+  /* UI element colors */
+  --border: hsl(0 0% 20%);
+  --border-muted: hsl(0 0% 15%);
+  --highlight: hsl(0 0% 18%);
+  
+  /* Shadows and effects */
+  --card-shadow: hsl(0 0% 0% / 0.4);
+  --shadow-sm: 0 1px 3px var(--card-shadow);
+  --shadow-md: 0 4px 12px var(--card-shadow);
+  --shadow-lg: 0 8px 24px var(--card-shadow);
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--spotify-green), var(--spotify-green-hover));
+  --gradient-card: linear-gradient(135deg, var(--card-bg), var(--highlight));
+  
+  /* Typography */
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-xxl: 3rem;
+  
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+  
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
 }
 
 body {
@@ -21,6 +63,6 @@ body {
   color: var(--text);
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: var(--font-family);
   box-sizing: border-box;
 }

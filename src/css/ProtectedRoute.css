@@ -1,0 +1,36 @@
+/* Protected Route Loading Styles */
+.protected-route-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--bg-dark);
+  color: var(--text);
+  font-family: var(--font-family);
+}
+
+.protected-route-spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--border);
+  border-top: 3px solid var(--spotify-green);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.protected-route-message {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+@keyframes spin {
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(360deg); 
+  }
+}

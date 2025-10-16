@@ -1,0 +1,46 @@
+/* Callback Page Styles */
+.callback-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--bg-dark);
+  color: var(--text);
+  font-family: var(--font-family);
+}
+
+.callback-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: var(--text);
+}
+
+.callback-status {
+  font-size: 1rem;
+  color: var(--text-muted);
+  text-align: center;
+  margin: 0;
+  max-width: 400px;
+  line-height: 1.4;
+}
+
+.callback-spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--border);
+  border-top: 3px solid var(--spotify-green);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(360deg); 
+  }
+}

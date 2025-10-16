@@ -1,0 +1,111 @@
+/* Login Page Styles */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--bg-dark);
+  color: var(--text);
+  font-family: var(--font-family);
+}
+
+.login-card {
+  text-align: center;
+  padding: 40px;
+  border-radius: 12px;
+  background-color: var(--card-bg);
+  box-shadow: 0 8px 24px var(--card-shadow);
+  border: 1px solid var(--border-muted);
+  max-width: 400px;
+  width: 90%;
+}
+
+.login-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  background: var(--gradient-primary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.login-description {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.login-features {
+  text-align: left;
+  margin-bottom: 30px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  padding-left: 20px;
+}
+
+.login-features li {
+  margin-bottom: 8px;
+}
+
+.login-button {
+  background-color: var(--spotify-green);
+  color: var(--text);
+  border: none;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto;
+  min-width: 200px;
+  font-family: var(--font-family);
+}
+
+.login-button:hover:not(:disabled) {
+  background-color: var(--spotify-green-hover);
+  transform: scale(1.05);
+}
+
+.login-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+  transform: scale(0.95);
+  background-color: var(--highlight);
+}
+
+.loading-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top: 2px solid var(--text);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.music-icon {
+  font-size: 1.2rem;
+}
+
+.login-disclaimer {
+  font-size: 0.85rem;
+  color: var(--sub-text);
+  margin-top: 20px;
+  line-height: 1.4;
+}
+
+@keyframes spin {
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(360deg); 
+  }
+}
